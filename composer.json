@@ -1,0 +1,10 @@
+{
+    "name": "magentoese/theme-brentmill",
+    "type": "magento2-theme",
+    "require": {
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [ "registration.php" ]
+    }
+}
