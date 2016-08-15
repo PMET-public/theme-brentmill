@@ -15,11 +15,10 @@
 @h1__font-weight: 500;
 
 //  Page  colors
-@page__background-color: @color-walls;
-@sidebar__background-color: @color-ceiling;
+@page__background-color: @color-white;
+@sidebar__background-color: @color-pu2;
 @primary__color: @color-floor;
 @border-color__base: @color-pu2;
-
 @link__color: @color-floor;
 @link__hover__color: @color-pu2;
 
@@ -30,7 +29,7 @@
 
 //  Primary button
 @button-primary__background: @color-red;
-@button-primary__border: 1px solid @color-pu2;
+@button-primary__border: 1px solid darken(@color-red, 15%);
 @button-primary__color: @color-white;
 @button-primary__hover__background: darken(@color-red, 5%);
 @button-primary__hover__border: 1px solid @color-pu2;
@@ -39,11 +38,13 @@
 //  Navigation
 @navigation-level0-item__color: @color-gray80;
 @submenu-item__color: @color-gray80;
+@submenu-item__background: @color-floor;
 
-@navigation__background: @color-red;
+@navigation__background: @color-floor;
 @navigation-desktop-level0-item__color: @color-gray80;
 @navigation-desktop-level0-item__hover__color: @color-gray34;
-@navigation-desktop-level0-item__active__color: @navigation-desktop-level0-item__color;
+@navigation-desktop-level0-item__active__color: @color-pu2;
+;
 
 //  Tabs
 @tab-control__background-color: @page__background-color;
@@ -58,7 +59,7 @@
         .lib-css(background-color, @color-pu2);
     }
 }
-@header__background-color: @color-ceiling;
+@header__background-color: @color-white;
 @header-icons-color: @color-pu2;
 @header-icons-color-hover: darken(@color-pu2, 5%);
 
