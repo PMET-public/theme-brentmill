@@ -1,0 +1,6 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+    	<!-- Add Google Fonts -->
+        <link src="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,500 src_type="url" rel="stylesheet" type="text/css" />
+    </head>
+</page>

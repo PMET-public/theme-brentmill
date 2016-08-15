@@ -6,14 +6,22 @@
 @color-ceiling: #8BA7A3;
 @color-walls: #B7DBD7;
 
+// Fonts
+@heading-font: 'Raleway', sans-serif;
+@primary-font: 'Open Sans', sans-serif;
+
+@font-family__base: @primary-font;
+@h1__font-family: @heading-font;
+@h1__font-weight: 500;
+
 //  Page  colors
 @page__background-color: @color-walls;
 @sidebar__background-color: @color-ceiling;
 @primary__color: @color-floor;
 @border-color__base: @color-pu2;
 
-@link__color: @primary__color;
-@link__hover__color: @color-floor;
+@link__color: @color-floor;
+@link__hover__color: @color-pu2;
 
 //  Buttons
 @button__color: @color-gray20;
@@ -44,6 +52,16 @@
 @form-element-input__background: @color-gray89;
 @form-element-input-placeholder__color: @color-gray60;
 
-//  Header icons
-@header-icons-color: @color-gray60;
-@header-icons-color-hover: @color-pu2;
+//  Header
+.page-header {
+    .panel.wrapper {
+        .lib-css(background-color, @color-pu2);
+    }
+}
+@header__background-color: @color-ceiling;
+@header-icons-color: @color-pu2;
+@header-icons-color-hover: darken(@color-pu2, 5%);
+
+// Footer
+@footer__background-color: @color-floor;
+@copyright__background-color: darken(@color-floor, 5%);
