@@ -22,6 +22,11 @@
 @border-color__base: @color-pu2;
 @link__color: @color-floor;
 @link__hover__color: @color-pu2;
+@rating-icon__active__color: @color-red;
+
+// PDP
+@gallery-thumb-border-color-active: @color-red; //not working?
+@gallery-dot-color-active: @color-red; //not working?
 
 //  Buttons
 @button__color: @color-gray20;
@@ -37,19 +42,23 @@
 @button-primary__hover__color: @color-white;
 
 //  Navigation
-@navigation-level0-item__color: @color-gray80;
-@submenu-item__color: @color-gray80;
-@submenu-item__background: @color-floor;
+@navigation__background: @color-white;
+@navigation-level0-item__color: @color-pu2;
+@navigation-level0-item__active__border-color: @color-walls;
 
-@navigation__background: @color-floor;
-@navigation-desktop-level0-item__color: @color-gray80;
-@navigation-desktop-level0-item__hover__color: @color-gray34;
-@navigation-desktop-level0-item__active__color: @color-pu2;
+@navigation-desktop__background: @color-floor;
+@navigation-desktop-level0-item__color: @color-pu2;
+@navigation-desktop-level0-item__hover__color: @color-walls;
+@navigation-desktop-level0-item__active__color: @color-walls;
 @navigation-desktop-level0-item__active__border-color: @color-walls;
-@submenu-desktop-item__color: @color-pu2;
-@submenu-desktop-item__active__border-color: @color-walls;
 
-;
+//@submenu-item__color: @color-pu2;
+@submenu-item__background: @color-white;
+@submenu-item__active__border-color: @color-walls;
+
+@submenu-desktop-item__color: @color-pu2;
+@submenu-desktop-item__hover__color: @color-floor;
+@submenu-desktop-item__active__border-color: @color-walls;
 
 //  Tabs
 @tab-control__background-color: @color-walls;
@@ -59,11 +68,7 @@
 @form-element-input-placeholder__color: @color-gray60;
 
 //  Header
-.page-header {
-    .panel.wrapper {
-        .lib-css(background-color, @color-pu2);
-    }
-}
+@header-panel__background-color: @color-pu2;
 @header__background-color: @color-white;
 @header-icons-color: @color-pu2;
 @header-icons-color-hover: darken(@color-pu2, 5%);
