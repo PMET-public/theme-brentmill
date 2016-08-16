@@ -13,6 +13,7 @@
 @font-family__base: @primary-font;
 @h1__font-family: @heading-font;
 @h1__font-weight: 500;
+@h1__font-size-desktop: 24px;
 
 //  Page  colors
 @page__background-color: @color-white;
@@ -44,10 +45,14 @@
 @navigation-desktop-level0-item__color: @color-gray80;
 @navigation-desktop-level0-item__hover__color: @color-gray34;
 @navigation-desktop-level0-item__active__color: @color-pu2;
+@navigation-desktop-level0-item__active__border-color: @color-walls;
+@submenu-desktop-item__color: @color-pu2;
+@submenu-desktop-item__active__border-color: @color-walls;
+
 ;
 
 //  Tabs
-@tab-control__background-color: @page__background-color;
+@tab-control__background-color: @color-walls;
 
 //  Forms
 @form-element-input__background: @color-gray89;
@@ -65,4 +70,6 @@
 
 // Footer
 @footer__background-color: @color-floor;
+@footer-links-color: @color-ceiling;
+@footer-links-color-hover: darken(@color-ceiling, 15%);
 @copyright__background-color: darken(@color-floor, 5%);
