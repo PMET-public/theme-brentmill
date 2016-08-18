@@ -2,6 +2,16 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="194.5px" height="43px" viewBox="0 0 194.5 43" enable-background="new 0 0 194.5 43" xml:space="preserve">
-<text transform="matrix(1 0 0 1 -1 34.1797)" fill="#9B0505" font-family="'Raleway-Black'" font-size="33.7788">BRENTMILL</text>
+	 width="249px" height="43px" viewBox="-63.25 0 249 43" enable-background="new -63.25 0 249 43" xml:space="preserve">
+<text transform="matrix(1 0 0 1 -11 33.5547)" fill="#9B0505" font-family="'Raleway-Black'" font-size="33.7788">BRENTMILL</text>
+<g>
+	<g>
+		<circle fill="#637573" cx="-46.5" cy="13.974" r="13.785"/>
+		<circle opacity="0.75" fill="#363F3E" cx="-31.295" cy="13.974" r="13.785"/>
+		<circle opacity="0.74" fill="#9B0505" cx="-31.295" cy="28.778" r="13.785"/>
+		<circle opacity="0.75" fill="#8BA7A3" cx="-47.019" cy="28.778" r="13.785"/>
+	</g>
+	<circle opacity="0.5" fill="#363F3E" cx="-39.166" cy="21.135" r="17.355"/>
+	<circle fill="#FFFFFF" cx="-39.166" cy="21.135" r="10.208"/>
+</g>
 </svg>
