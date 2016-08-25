@@ -13,5 +13,20 @@
                 <argument name="logo_img_height" xsi:type="number">83</argument>
             </arguments>
         </referenceBlock>
+        <move element="minicart" destination="header.panel" />
+        <move element="header.links" destination="header.panel" after="minicart" />
+        <move element="top.search" destination="catalog.topnav" before="-" />
+        <block class="Magento\Cms\Block\Block" name="quick-order.staticblock">
+            <arguments>
+                <argument name="block_id" xsi:type="string">quick-order</argument>
+            </arguments>
+        </block>
+        <block class="Magento\Cms\Block\Block" name="credit-app.staticblock">
+            <arguments>
+                <argument name="block_id" xsi:type="string">credit-app</argument>
+            </arguments>
+        </block>
+        <move element="quick-order.staticblock" destination="catalog.topnav" before="top.search" />
+        <move element="credit-app.staticblock" destination="catalog.topnav" before="top.search" />
     </body>
 </page>
