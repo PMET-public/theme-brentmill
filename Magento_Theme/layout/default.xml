@@ -15,7 +15,7 @@
         </referenceBlock>
         <move element="minicart" destination="header.panel" />
         <move element="header.links" destination="header.panel" after="minicart" />
-        <move element="top.search" destination="catalog.topnav" before="-" />
+        <move element="top.search" destination="header.container" before="logo" />
         <block class="Magento\Cms\Block\Block" name="quick-order.staticblock">
             <arguments>
                 <argument name="block_id" xsi:type="string">quick-order</argument>
