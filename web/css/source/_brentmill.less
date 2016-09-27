@@ -33,6 +33,12 @@
 
 // PLP
 .page-products .product-item-actions { float: right; }
+.page-products .product-item-name, .product.name a  { font-weight: 700 !important; font-size: 18px;}
+.page-products .product-item .price-box { float: right;}
+.page-products .product-item .price {font-size: 18px;}
+.page-products .product-item-actions { clear: both;}
+.page-products .product-item-description { float: none; width: 75%;}
+.filter-options-title { word-break: break-word; }
 
 // PDP
 @gallery-thumb-border-color-active: @color-red; //not working?
@@ -117,6 +123,11 @@ div.minicart-wrapper { margin-top: -5px; }
   background-color: @color-walls;
 }
 .opc-progress-bar-item._active:before, .opc-progress-bar-item._active > span:before { background-color: @color-floor;}
+
+// My Account
+.block-collapsible-nav .content { background-color: @color-walls;}
+.block-collapsible-nav .item.current > strong { border-color: @color-red;}
+.table tfoot, .order-details-items tfoot td { background: @color-walls;}
 
 // Footer
 @footer__background-color: @color-floor;

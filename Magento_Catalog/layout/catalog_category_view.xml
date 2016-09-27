@@ -8,6 +8,8 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="product_list_toolbar">
+            <action method="disableViewSwitcher">
+            </action>
             <arguments>
                 <argument name="_current_grid_mode" xsi:type="string">list</argument>
             </arguments>
