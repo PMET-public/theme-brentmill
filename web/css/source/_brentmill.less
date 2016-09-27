@@ -31,6 +31,9 @@
 @link__hover__color: @color-pu2;
 @rating-icon__active__color: @color-red;
 
+// Home
+.page-layout-1column .block.widget .products-grid .product-item { width:16%;}
+
 // PLP
 .page-products .product-item-actions { float: right; }
 .page-products .product-item-name, .product.name a  { font-weight: 700 !important; font-size: 18px;}
@@ -96,6 +99,8 @@
 .minicart-wrapper .block-minicart {
   color: @color-floor;
 }
+.minicart-items .action.edit:before, .minicart-items .action.delete:before { color:@color-black; font-size:20px;}
+.cart.table-wrapper .actions-toolbar > .action-edit:before, .cart.table-wrapper .actions-toolbar > .action-delete:before {color:@color-black;}
 
 @icon-search-color: @color-pu2;
 .block-search {
@@ -329,7 +334,7 @@ button.dropbtn {
     text-decoration: none
 }
 .block-promo .icon.more:after {
-    font-family: 'luma-icons';
+    font-family: 'icons-blank-theme';
     content: '\e608';
     font-size: 12px;
     line-height: inherit;
@@ -529,7 +534,7 @@ fieldset[disabled] .block-promo .button.more {
 .training-videos .icon.calendar:before,
 .training-on-demand .icon.download:before,
 .training-videos .icon.download:before {
-    font-family: 'luma-icons';
+    font-family: 'icons-blank-theme';
     font-size: 32px;
     line-height: inherit;
     color: inherit;
