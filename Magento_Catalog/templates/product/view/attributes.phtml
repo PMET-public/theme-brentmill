@@ -1,0 +1,41 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * Product additional attributes template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View\Attributes
+ */
+?>
+<?php
+    $_helper = $this->helper('Magento\Catalog\Helper\Output');
+    $_product = $block->getProduct()
+?>
+<?php if ($_additional = $block->getAdditionalData()): ?>
+    <div class="additional-attributes-wrapper table-wrapper">
+        <table class="data table additional-attributes" id="product-attribute-specs-table">
+            <caption class="table-caption"><?php /* @escapeNotVerified */ echo __('More Information') ?></caption>
+            <tbody>
+            <?php foreach ($_additional as $_data): ?>
+                <tr>
+                    <th class="col label" scope="row"><?php echo $block->escapeHtml(__($_data['label'])) ?></th>
+                    <?php
+                    $linkreplace = $block->escapeHtml(__($_data['label']));
+                    if ($linkreplace == "Spec Sheet") { ?>
+                      <td class="col data" data-th="<?php echo $block->escapeHtml(__($_data['label'])) ?>"><a href="/pub/media/downloadable/spec_sheets/<?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>"><?php /* @escapeNotVerified */ echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></a></td>
+                    <?php } elseif ($linkreplace == "YouTube Link") { ?>
+                      <td class="col data" data-th="<?php echo $block->escapeHtml(__($_data['label'])) ?>"><a href="<?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>"><?php /* @escapeNotVerified */ echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></a></td>
+                    <?php } else { ?>
+                    <td class="col data" data-th="<?php echo $block->escapeHtml(__($_data['label'])) ?>"><?php /* @escapeNotVerified */ echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></td>
+                    <?php } ?>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+<?php endif;?>
