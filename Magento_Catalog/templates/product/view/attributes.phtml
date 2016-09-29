@@ -27,9 +27,9 @@
                     <?php
                     $linkreplace = $block->escapeHtml(__($_data['label']));
                     if ($linkreplace == "Spec Sheet") { ?>
-                      <td class="col data" data-th="<?php echo $block->escapeHtml(__($_data['label'])) ?>"><a href="/pub/media/downloadable/spec_sheets/<?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>"><?php /* @escapeNotVerified */ echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></a></td>
+                      <td class="col data" data-th="<?php echo $block->escapeHtml(__($_data['label'])) ?>"><a href="/pub/media/downloadable/spec_sheets/<?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>" target="_blank"><?php /* @escapeNotVerified */ echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></a></td>
                     <?php } elseif ($linkreplace == "YouTube Link") { ?>
-                      <td class="col data" data-th="<?php echo $block->escapeHtml(__($_data['label'])) ?>"><a href="<?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>"><?php /* @escapeNotVerified */ echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></a></td>
+                      <td class="col data" data-th="<?php echo $block->escapeHtml(__($_data['label'])) ?>"><a href="<?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>"  target="_blank"><?php /* @escapeNotVerified */ echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></a></td>
                     <?php } else { ?>
                     <td class="col data" data-th="<?php echo $block->escapeHtml(__($_data['label'])) ?>"><?php /* @escapeNotVerified */ echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></td>
                     <?php } ?>
