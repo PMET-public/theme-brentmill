@@ -36,13 +36,14 @@
 
 // PLP
 .page-products .product-item-actions { float: right; }
-.page-products .product-item-name, .product.name a  { font-weight: 700 !important; font-size: 18px; width: 80%; float:left; display: block;}
+.products-list .page-products .product-item-name, .product.name a  { font-weight: 700 !important; font-size: 18px; width: 80%; float:left; display: block;}
 .page-products .product-item .price-box { float: right;}
 .page-products .product-item .price {font-size: 18px;}
 .page-products .product-item-actions { clear: both;}
 .page-products .product-item-description { float: none; width: 75%;}
 .filter-options-title { word-break: break-word; }
 .products-list .product-image-wrapper .product-image-photo { margin-top: -40px; }
+.related-available .product.name a, .products-upsell .product.name a, .products-crosssell .product.name a { font-weight: 400 !important; font-size:1.4rem; width: 100%;}
 
 // PDP
 @gallery-thumb-border-color-active: @color-red; //not working?
@@ -109,13 +110,14 @@
 @icon-search-color: @color-pu2;
 
 .block-search {
-    top: 42px;
-    right: 20%;
-    width:55%;
+    top: 82px;
+    right: 15%;
     max-width: 400px;
+    display: block;
   }
 
 div.minicart-wrapper { margin-top: -5px; }
+
 .nav-promo {
     display: inline-block;;
     float: right;
@@ -159,7 +161,6 @@ div.minicart-wrapper { margin-top: -5px; }
     margin-right: 12px;
     margin-top: -1px;
     border: 0px;
-    //font-size: 16px;
 }
 button.dropbtn {
   border: none;
@@ -347,7 +348,7 @@ button.dropbtn {
 .block-promo .icon.more:after {
     font-family: 'icons-blank-theme';
     content: '\e608';
-    font-size: 12px;
+    font-size: 28px;
     line-height: inherit;
     color: inherit;
     overflow: hidden;
