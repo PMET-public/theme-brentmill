@@ -15,5 +15,13 @@
         </referenceBlock>
         <move element="minicart" destination="header.panel" />
         <move element="header.links" destination="header.panel" after="minicart" />
+
+        <referenceBlock name="customer-account-navigation-wish-list-link" remove="true"/>
+        <referenceBlock name="customer-account-navigation-gift-card-link" remove="true"/>
+        <referenceBlock name="customer-account-navigation-gift-registry-link" remove="true"/>
+        <referenceBlock name="customer-account-navigation-reward-link" remove="true"/>
+        <referenceBlock name="customer-account-navigation-downloadable-products-link" remove="true"/>
+        <referenceBlock name="customer-account-navigation-magento-invitation-link" remove="true"/>
+        <referenceBlock name="customer-account-navigation-customer-balance-link" remove="true"/>
     </body>
 </page>
