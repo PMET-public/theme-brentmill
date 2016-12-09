@@ -148,7 +148,16 @@ div.minicart-wrapper { margin-top: -5px; }
 .block-collapsible-nav .item.current > strong { border-color: @color-red;}
 .block-collapsible-nav .item.current a { border-color: @color-red; }
 .table tfoot, .order-details-items tfoot td { background: @color-walls;}
-a#openApprove { padding: 0px 10px 0px 10px; }
+a#openApprove, a#openReject {
+  border: 2px solid #747474;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 3px 0 5px 0;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  vertical-align: top;
+  cursor: pointer;
+ }
 
 
 // Footer
